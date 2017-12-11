@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "moneysence",
+  "version": "1.0.0",
+  "description": "Shouldn't lose your money sense",
+  "content_scripts": [
+    {
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "matches": ["https://www.amazon.co.jp/*", "https://*.rakuten.co.jp/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    "icons/goYen.png",
+    "icons/gohyakuYen.png",
+    "icons/gojyuYen.png",
+    "icons/gosenYen.png",
+    "icons/hyakuYen.png",
+    "icons/ichiYen.png",
+    "icons/ichimanYen.png",
+    "icons/jyuYen.png",
+    "icons/senYen.png"
+  ],
+  "permissions": ["tabs"]
+}
